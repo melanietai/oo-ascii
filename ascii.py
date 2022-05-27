@@ -17,9 +17,9 @@ class Canvas:
 
     def render(self, height, width):
         
-        for x in range(width):
+        for y in range(height):
             str = ''
-            for y in range(height):
+            for x in range(width):
                 fill_char = ' '
                 for shape in self.shapes:
                     if shape.start_x <= x <= shape.end_x and shape.start_y <= y <= shape.end_y:
